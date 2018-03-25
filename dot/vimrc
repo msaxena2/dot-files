@@ -11,17 +11,40 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
     Plug 'vim-airline/vim-airline'
     Plug 'lervag/vimtex'
+"    Plug 'parsonsmatt/intero-neovim'
     Plug 'terryma/vim-smooth-scroll'
 call plug#end()
 
-" General Settings
-set clipboard=unnamed
-set hidden
-set tabstop=4
-set shiftwidth=4
-set expandtab
-autocmd BufWritePre * %s/\s\+$//e
+syntax on
+filetype plugin indent on
 
+set nocompatible
+set number
+set nowrap
+set showmode
+set tw=80
+set smartcase
+set smarttab
+set smartindent
+set autoindent
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set incsearch
+set mouse=a
+set history=1000
+set clipboard=unnamedplus,autoselect
+
+set completeopt=menuone,menu,longest
+
+set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
+set wildmode=longest,list,full
+set wildmenu
+set completeopt+=longest
+
+set t_Co=256
+
+set cmdheight=1
 set nowrap
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -29,3 +52,14 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+let g:tex_flavor='latex'
+let g:tex_nospell=1
+let g:tex_no_error=1
+
+let g:vimtex_view_general_viewer
+      \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
+let g:vimtex_latexmk_callback_hooks = ['UpdateSkim']
+let g:vimtex_quickfix_ignore_all_warnings = 1
+
