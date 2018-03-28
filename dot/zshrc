@@ -23,6 +23,8 @@ eval "$(pyenv init -)"
 # Use Nvim By default
 alias vim=nvim
 
+alias l=ls
+
  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
  # Temporary Setting for z3
