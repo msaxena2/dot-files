@@ -1,0 +1,25 @@
+[user]
+	name = Manasvi Saxena
+	email = msaxena2@illinois.edu
+[core]
+	editor = /usr/local/bin/nvim
+[merge]
+	tool = vimdiff
+[alias]
+    c = commit
+    a = add
+    d = diff
+    s = show
+    st  = status
+    l = log
+    gra = log --graph --oneline
+    d = diff
+    r = rebase
+    rc = rebase --continue
+    ra = rebase --abort
+    ri = rebase --interactive
+    co = checkout
+    cpick = cherry-pick
+    stash-st = stash show -p
+[color]
+	ui = true

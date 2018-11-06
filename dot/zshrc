@@ -22,11 +22,15 @@ eval "$(pyenv init -)"
 
 # Use Nvim By default
 alias vim=nvim
+alias v=nvim
+
 
 alias l=ls
+alias g=git
 
- [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+alias maude=/Applications/Maude-2.7.1-osx/maude.darwin64
 
- # Temporary Setting for z3
- export PATH=$PATH:/Users/manasvi/Projects/evm-semantics/.build/k/k-distribution/target/release/k/bin:/Users/manasvi/Library/Python/2.7/bin
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+
 
