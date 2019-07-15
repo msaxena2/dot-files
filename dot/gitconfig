@@ -2,7 +2,8 @@
 	name = Manasvi Saxena
 	email = msaxena2@illinois.edu
 [core]
-	editor = /usr/local/bin/nvim
+	editor = /usr/bin/nvim
+        excludesfile = ~/.global_gitignore
 [merge]
 	tool = vimdiff
 [alias]
@@ -12,7 +13,8 @@
     s = show
     st  = status
     l = log
-    gra = log --graph --oneline
+    gr = log --pretty="format:%C(auto)%h%C(auto)%d\\ %Creset%s%C(auto,blue)\\ [%aN]%Creset" --graph
+    gra = log --pretty="format:%C(auto)%h%C(auto)%d\\ %Creset%s%C(auto,blue)\\ [%aN]%Creset" --graph --exclude refs/notes/** --exclude refs/stash --all
     d = diff
     r = rebase
     rc = rebase --continue
@@ -23,3 +25,15 @@
     stash-st = stash show -p
 [color]
 	ui = true
+
+[push]
+    default = tracking  ; current branch only to tracked upstream branch
+
+[status]
+    submoduleSummary = true
+
+[commit]
+    verbose = true
+
+[url "git@github.com.:"]
+    pushInsteadOf = https://github.com/
