@@ -12,7 +12,6 @@ let mapleader = ","
 " Install Plugins
 call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
-    Plug 'lervag/vimtex'
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()

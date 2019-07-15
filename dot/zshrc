@@ -17,8 +17,6 @@ bindkey -v
 
 export PATH=$PATH:~/.local/bin
 
-# Pyenv setup
-eval "$(pyenv init -)"
 
 # Use Nvim By default
 alias vim=nvim
