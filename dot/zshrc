@@ -12,6 +12,7 @@ prompt redhat
 
 # Vi bindings
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 # Add .local into PATH
 
