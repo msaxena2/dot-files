@@ -31,5 +31,4 @@ alias maude=/Applications/Maude-2.7.1-osx/maude.darwin64
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-
-
+source gitcmd-abbrev.bash
