@@ -2,7 +2,7 @@
 	name = Manasvi Saxena
 	email = msaxena2@illinois.edu
 [core]
-	editor = /usr/bin/nvim
+        #   No editor= means use $VISUAL or $EDITOR.
         excludesfile = ~/.global_gitignore
 [merge]
 	tool = vimdiff
